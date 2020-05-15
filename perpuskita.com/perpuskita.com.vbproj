@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{259C3217-E358-4790-A055-13AFDED330B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>perpuskita.com.My.MyApplication</StartupObject>
+    <RootNamespace>perpuskita.com</RootNamespace>
+    <AssemblyName>perpuskita.com</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>perpuskita.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>perpuskita.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>..\..\..\..\TUTTORIAL\visual basic\framework\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\TUTTORIAL\visual basic\framework\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <HintPath>..\package\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\TUTTORIAL\visual basic\framework\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="rep_kartu.Designer.vb">
+      <DependentUpon>rep_kartu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_kartu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xyz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xyz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cari_pinjam.Designer.vb">
+      <DependentUpon>cari_pinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cari_pinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_anggota.Designer.vb">
+      <DependentUpon>input_anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_buku.Designer.vb">
+      <DependentUpon>input_buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index_admin.Designer.vb">
+      <DependentUpon>index_admin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_kategori_buku.Designer.vb">
+      <DependentUpon>input_kategori_buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_kategori_buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_kembali.Designer.vb">
+      <DependentUpon>input_kembali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_kembali.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_penerbit.Designer.vb">
+      <DependentUpon>input_penerbit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_penerbit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_petugas.Designer.vb">
+      <DependentUpon>input_petugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_petugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_pinjam.Designer.vb">
+      <DependentUpon>input_pinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_pinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_rak.Designer.vb">
+      <DependentUpon>input_rak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="input_rak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koneksi.vb" />
+    <Compile Include="lap_anggota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lap_anggota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lap_buku.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lap_buku.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lap_penerbit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lap_penerbit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.vb">
+      <DependentUpon>loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rep_anggota.Designer.vb">
+      <DependentUpon>rep_anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rep_buku.Designer.vb">
+      <DependentUpon>rep_buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rep_penerbit.Designer.vb">
+      <DependentUpon>rep_penerbit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_penerbit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rep_pinjam.Designer.vb">
+      <DependentUpon>rep_pinjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_pinjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rep_trans.Designer.vb">
+      <DependentUpon>rep_trans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_trans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zzdd.Designer.vb">
+      <DependentUpon>zzdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zzdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rep_kartu.resx">
+      <DependentUpon>rep_kartu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xyz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>xyz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cari_pinjam.resx">
+      <DependentUpon>cari_pinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_anggota.resx">
+      <DependentUpon>input_anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_buku.resx">
+      <DependentUpon>input_buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index_admin.resx">
+      <DependentUpon>index_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_kategori_buku.resx">
+      <DependentUpon>input_kategori_buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_kembali.resx">
+      <DependentUpon>input_kembali.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_penerbit.resx">
+      <DependentUpon>input_penerbit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_petugas.resx">
+      <DependentUpon>input_petugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_pinjam.resx">
+      <DependentUpon>input_pinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_rak.resx">
+      <DependentUpon>input_rak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lap_anggota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lap_anggota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lap_buku.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lap_buku.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lap_penerbit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lap_penerbit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_anggota.resx">
+      <DependentUpon>rep_anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_buku.resx">
+      <DependentUpon>rep_buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_penerbit.resx">
+      <DependentUpon>rep_penerbit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_pinjam.resx">
+      <DependentUpon>rep_pinjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_trans.resx">
+      <DependentUpon>rep_trans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zzdd.resx">
+      <DependentUpon>zzdd.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
